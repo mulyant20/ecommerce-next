@@ -16,7 +16,7 @@ export default function Navbar() {
         onClick={() => setShowCart(true)}
       >
         <AiOutlineShopping />
-        <span className="cart-item-qty">{totalQuantities}</span>
+        {totalQuantities != 0 && <span className="cart-item-qty">{totalQuantities}</span>}
       </button>
 
       {showCart && <Cart />}
