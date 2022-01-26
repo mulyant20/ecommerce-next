@@ -21,7 +21,7 @@ export default function ProductDetail({ product, products }) {
 
   const addToCart = () => {
     onAdd(product, qty);
-    setQty(0);
+    setQty(1);
   };
 
   return (
